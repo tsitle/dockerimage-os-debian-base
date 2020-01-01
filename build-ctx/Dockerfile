@@ -59,6 +59,6 @@ RUN \
 COPY --chown=0:0 files/bash/dot_bashrc /root/.bashrc
 
 #
-ENV DEBIAN_FRONTEND=newt
+ENV DEBIAN_FRONTEND=dialog
 
 WORKDIR /root/
