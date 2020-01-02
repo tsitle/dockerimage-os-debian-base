@@ -34,6 +34,8 @@ RUN \
 			tzdata \
 			nano \
 			less \
+			wget \
+			ca-certificates \
 	|| exit 1; \
 	#
 	echo "**** generate locale ****"; \
