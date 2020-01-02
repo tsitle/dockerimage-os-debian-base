@@ -11,10 +11,11 @@ ADD cache/debian_${CF_DEBIAN_RELEASE}/rootfs-debian_${CF_DEBIAN_RELEASE}_${CF_DE
 
 # set environment variables
 ENV DEBIAN_FRONTEND="noninteractive"
-ENV HOME="/root" \
-LANGUAGE="en_US.UTF-8" \
-LANG="en_US.UTF-8" \
-TERM="xterm"
+ENV \
+	HOME="/root" \
+	LANGUAGE="en_US.UTF-8" \
+	LANG="en_US.UTF-8" \
+	TERM="xterm"
 
 # ------------------------------------------------------------------------------------------
 # taken from:
@@ -22,6 +23,8 @@ TERM="xterm"
 #
 CMD ["/bin/bash"]
 # ------------------------------------------------------------------------------------------
+
+ENV LC_ALL="en_US.UTF-8"
 
 RUN \
 	apt-get update \
