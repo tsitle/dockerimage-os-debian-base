@@ -4,8 +4,10 @@
 - from scratch
 	- Debian root-fs (as tarball)
 		- apt-utils
+		- ca-certificates
 		- curl
 		- less
 		- locales
 		- nano
 		- tzdata
+		- wget
