@@ -11,3 +11,4 @@
 		- nano
 		- tzdata
 		- wget
+		- procps
