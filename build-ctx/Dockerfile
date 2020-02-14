@@ -39,6 +39,7 @@ RUN \
 			less \
 			wget \
 			ca-certificates \
+			procps \
 	|| exit 1; \
 	#
 	echo "**** generate locale ****"; \
