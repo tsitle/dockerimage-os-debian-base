@@ -42,8 +42,7 @@ RUN \
 	|| exit 1; \
 	#
 	echo "**** generate locale ****"; \
-	locale-gen en_US.UTF-8 \
-	&& sed -i \
+	sed -i'' \
 			-e 's/# de_DE.UTF-8 UTF-8/de_DE.UTF-8 UTF-8/' \
 			-e 's/# de_DE ISO-8859-1/de_DE ISO-8859-1/' \
 			-e 's/# de_DE@euro ISO-8859-15/de_DE@euro ISO-8859-15/' \
