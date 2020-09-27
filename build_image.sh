@@ -156,7 +156,7 @@ LVAR_GITHUB_BASE="https://raw.githubusercontent.com/tsitle/docker_images_common_
 LVAR_DEBIAN_DIST="$(_getCpuArch debian_dist)"
 LVAR_DEBIAN_RFS="$(_getCpuArch debian_rootfs)"
 LVAR_DEBIAN_RELEASE="stretch"
-LVAR_DEBIAN_VERSION="9.11"
+LVAR_DEBIAN_VERSION="9.13"
 
 LVAR_IMAGE_NAME="os-debian-${LVAR_DEBIAN_RELEASE}-$LVAR_DEBIAN_DIST"
 LVAR_IMAGE_VER="$LVAR_DEBIAN_VERSION"
