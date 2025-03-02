@@ -155,8 +155,8 @@ LVAR_GITHUB_BASE="https://raw.githubusercontent.com/tsitle/docker_images_common_
 
 LVAR_DEBIAN_DIST="$(_getCpuArch debian_dist)"
 LVAR_DEBIAN_RFS="$(_getCpuArch debian_rootfs)"
-LVAR_DEBIAN_RELEASE="bullseye"
-LVAR_DEBIAN_VERSION="11.2"
+LVAR_DEBIAN_RELEASE="bookworm"
+LVAR_DEBIAN_VERSION="12.9"
 
 LVAR_IMAGE_NAME="os-debian-${LVAR_DEBIAN_RELEASE}-$LVAR_DEBIAN_DIST"
 LVAR_IMAGE_VER="$LVAR_DEBIAN_VERSION"
@@ -165,7 +165,7 @@ LVAR_IMAGE_VER="$LVAR_DEBIAN_VERSION"
 	mkdir cache || exit 1
 }
 
-_getCommonFile "debian_${LVAR_DEBIAN_RELEASE}/rootfs-debian_${LVAR_DEBIAN_RELEASE}_${LVAR_DEBIAN_VERSION}-${LVAR_DEBIAN_RFS}.tar.xz" || exit 1
+_getCommonFile "debian_${LVAR_DEBIAN_RELEASE}/rootfs-debian_${LVAR_DEBIAN_RELEASE}_${LVAR_DEBIAN_VERSION}-${LVAR_DEBIAN_RFS}.tar.gz" || exit 1
 
 docker build \
 		--build-arg CF_CPUARCH_DEB_ROOTFS="$LVAR_DEBIAN_RFS" \

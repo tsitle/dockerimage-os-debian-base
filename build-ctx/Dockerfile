@@ -7,7 +7,7 @@ ENV CF_CPUARCH_DEB_DIST=${CF_CPUARCH_DEB_DIST}
 ARG CF_CPUARCH_DEB_ROOTFS
 
 # copy Debian root-fs
-ADD cache/debian_${CF_DEBIAN_RELEASE}/rootfs-debian_${CF_DEBIAN_RELEASE}_${CF_DEBIAN_VERSION}-${CF_CPUARCH_DEB_ROOTFS}.tar.xz /
+ADD cache/debian_${CF_DEBIAN_RELEASE}/rootfs-debian_${CF_DEBIAN_RELEASE}_${CF_DEBIAN_VERSION}-${CF_CPUARCH_DEB_ROOTFS}.tar.gz /
 
 # set environment variables
 ENV DEBIAN_FRONTEND="noninteractive"

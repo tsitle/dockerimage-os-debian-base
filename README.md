@@ -1,4 +1,4 @@
-# Debian Docker Base Image for AARCH64, ARMv7l, X86 and X64
+# Debian Docker Base Image for AARCH64, ARMv7l and X64
 
 ## Inheritance and added packages
 - from scratch
@@ -12,4 +12,3 @@
 		- tzdata
 		- wget
 		- procps
-
