@@ -41,7 +41,6 @@ RUN \
 			ca-certificates \
 			procps \
 	|| exit 1; \
-	#
 	echo "**** generate locale ****"; \
 	sed -i'' \
 			-e 's/# de_DE.UTF-8 UTF-8/de_DE.UTF-8 UTF-8/' \
@@ -53,7 +52,6 @@ RUN \
 			/etc/locale.gen \
 	&& dpkg-reconfigure locales \
 	|| exit 1; \
-	#
 	apt-get clean \
 	&& rm -rf \
 			/tmp/* \

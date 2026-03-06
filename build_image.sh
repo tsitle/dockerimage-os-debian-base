@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# by TS, May 2019
+# by TS, May 2019, Mar 2026
 #
 
 VAR_MYNAME="$(basename "$0")"
@@ -155,8 +155,8 @@ LVAR_GITHUB_BASE="https://raw.githubusercontent.com/tsitle/docker_images_common_
 
 LVAR_DEBIAN_DIST="$(_getCpuArch debian_dist)"
 LVAR_DEBIAN_RFS="$(_getCpuArch debian_rootfs)"
-LVAR_DEBIAN_RELEASE="bookworm"
-LVAR_DEBIAN_VERSION="12.13"
+LVAR_DEBIAN_RELEASE="trixie"
+LVAR_DEBIAN_VERSION="13.3"
 
 LVAR_IMAGE_NAME="os-debian-${LVAR_DEBIAN_RELEASE}-$LVAR_DEBIAN_DIST"
 LVAR_IMAGE_VER="$LVAR_DEBIAN_VERSION"
